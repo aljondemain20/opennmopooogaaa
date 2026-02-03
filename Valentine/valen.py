@@ -4,8 +4,12 @@ from flask import Flask, render_template, url_for, redirect
 app = Flask(__name__)
 no_clicks = 0
 
-@app.route('/')
-def index():
+@app.route("/")
+def blocked():
+    abort(404)
+    
+@app.route("/for-my-langgaaa onlyyy-rachell-0214")
+def secret():
     return render_template('index.html', no_clicks=no_clicks)
 
 @app.route('/yes')
@@ -23,4 +27,5 @@ def no():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=50000)
+
 
