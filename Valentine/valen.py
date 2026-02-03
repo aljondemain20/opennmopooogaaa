@@ -4,7 +4,7 @@ from flask import Flask, render_template, url_for, redirect
 app = Flask(__name__)
 no_clicks = 0
 
-@app.route('/for-my-valentine-rachell')
+@app.route('/')
 def index():
     return render_template('index.html', no_clicks=no_clicks)
 
@@ -22,4 +22,5 @@ def no():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
+    app.run(host="0.0.0.0", port=50000)
+
