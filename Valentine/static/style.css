@@ -1,0 +1,57 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+body {
+    background-image: url("images/us.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.card {
+    background: white;
+    padding: 40px;
+    width: 320px;
+    max-width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #e99aa9;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-size: contain;   
+        background-color: #ffd6e6;  
+    }
+}

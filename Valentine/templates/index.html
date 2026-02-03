@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Made Just for You Langaaaaa!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h1>Will You Be My Valentine?</h1>
+        <p>
+            I made this little page just for you, Langaaaaa koooooo!
+        </p>
+
+        <div class="buttons">
+            <a href="/yes">
+                <button class="yes-btn"
+                        style="transform: scale({{ 1 + no_clicks * 0.3 }});">
+                    Yes 💖
+                </button>
+            </a>
+
+            <a href="/no">
+                <button class="no-btn">No 💔</button>
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>
